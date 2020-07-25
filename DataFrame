@@ -1,0 +1,21 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+#Criando um DataFrame
+txt = pd.DataFrame(columns = ["Cebola", "Baterraba"],
+data = [[0.5, 0.7], [0.9, 1.3],[0.3,0.6], [0.6, 1.1], [1.2,0.3]],
+index = ["Oxigenio", "Nitrogenio", "Ferro", "Magnesio", "Zinco"])
+print(txt)
+
+#Plotando um gráfico
+
+plt.plot(txt)
+plt.title("Verificação de Nutrientes ")
+plt.plot(txt, label="Cenoura")
+plt.plot(txt, label ="Beterraba")
+plt.xlabel("Nutrientes")
+plt.ylabel("Quantidade de Nutrientes")
+plt.legend()
+plt.show()
+
+#Obs: a legenda saiu duas vezes. 
